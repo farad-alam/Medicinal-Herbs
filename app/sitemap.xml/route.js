@@ -1,13 +1,13 @@
 // app/sitemap.xml/route.js
 
 import { articles } from '@/lib/articles'; // Adjust this path
-const SITE_URL = 'https://your-domain.com'; // Replace with your actual domain
+const SITE_URL = 'https://medicinal-herbs.netlify.app'; // Replace with your actual domain
 
 export async function GET() {
   const urls = articles.map((article) => {
     return `
     <url>
-      <loc>${SITE_URL}/blog/${article.slug}</loc>
+      <loc>${SITE_URL}/${article.slug}</loc>
       <lastmod>${article.date}</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>

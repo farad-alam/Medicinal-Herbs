@@ -1,16 +1,16 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://ervas-medicinais.com.br',
+  siteUrl: process.env.SITE_URL || "https://medicinal-herbs.netlify.app",
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [
       {
-        userAgent: '*',
-        allow: '/',
+        userAgent: "*",
+        allow: "/",
       },
     ],
   },
-  changefreq: 'weekly',
+  changefreq: "weekly",
   priority: 0.7,
-  exclude: ['/admin', '/server-sitemap.xml'],
+  exclude: ["/admin", "/server-sitemap.xml"],
 };
