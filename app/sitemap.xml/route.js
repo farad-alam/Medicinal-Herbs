@@ -7,7 +7,7 @@ export async function GET() {
   const urls = articles.map((article) => {
     return `
     <url>
-      <loc>${SITE_URL}/${article.slug}</loc>
+      <loc>${SITE_URL}/artigos/${article.slug}</loc>
       <lastmod>${article.date}</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
